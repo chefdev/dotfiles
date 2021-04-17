@@ -38,6 +38,7 @@ mv ~/.bashrc ~/.bashrc.backup
 ln -s ~/.dotfiles/bash/.bashrc ~/.bashrc
 ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/zsh/.p10k.zsh ~/.p10k.zsh
+ln -s ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ```
 
 4. Change your default shell
