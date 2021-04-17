@@ -12,4 +12,5 @@ RUN mv ~/.bashrc ~/.bashrc.old
 RUN ln -s ~/.dotfiles/bash/.bashrc ~/.bashrc
 RUN ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
 RUN ln -s ~/.dotfiles/zsh/.p10k.zsh ~/.p10k.zsh
+RUN ln -s ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
 RUN chsh -s $(which zsh)

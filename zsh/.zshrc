@@ -70,6 +70,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# Start tmux by default
+ZSH_TMUX_AUTOSTART=true
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -123,3 +126,13 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+source <(kubectl completion zsh)
+alias k=kubectl
+
+# Start Docker daemon automatically when logging in
+RUNNING=`ps aux | grep dockerd | grep -v grep`
+if [ -z "$RUNNING" ]; then
+    sudo dockerd > /dev/null 2>&1 &
+    disown
+fi
