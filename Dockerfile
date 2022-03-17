@@ -5,6 +5,7 @@ RUN apt update && apt install -y \
     git \
     zsh \
     tmux \
+    vim \
  && rm -rf /var/lib/apt/lists/*
 ENTRYPOINT ["/usr/bin/zsh"]
 RUN git clone --recurse-submodules https://github.com/chefdev/dotfiles.git ~/.dotfiles
@@ -13,4 +14,5 @@ RUN ln -s ~/.dotfiles/bash/.bashrc ~/.bashrc
 RUN ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
 RUN ln -s ~/.dotfiles/zsh/.p10k.zsh ~/.p10k.zsh
 RUN ln -s ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
+RUN ln -s ~/.dotfiles/vim/.vimrc ~/.vimrc
 RUN chsh -s $(which zsh)
