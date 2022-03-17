@@ -7,7 +7,7 @@ A so far pretty lightweight zsh setup for your terminal...
 You can check out how the setup look and feel with a preconfigured docker image by running:
 
 ```shell
-docker run --name dotfiles-chefdev-demo -it docker.pkg.github.com/chefdev/dotfiles/demo:latest
+docker run --name dotfiles-chefdev-demo -it docker.pkg.github.com/chefdev/dotfiles/demo:main
 ```
 
 ## Setup requirements
@@ -38,6 +38,7 @@ mv ~/.bashrc ~/.bashrc.backup
 ln -s ~/.dotfiles/bash/.bashrc ~/.bashrc
 ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/zsh/.p10k.zsh ~/.p10k.zsh
+ln -s ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ```
 
 4. Change your default shell
