@@ -12,7 +12,7 @@ docker run --name dotfiles-chefdev-demo -it docker.pkg.github.com/chefdev/dotfil
 
 ## Setup requirements
 
-* Following packages should already be installed: `wget || curl` `git` `zsh` `tmux`
+* Following packages should already be installed: `wget || curl` `git` `zsh` `tmux` `vim`
 * Have a font installed that supports Powerline like
   [Cascadia Code PL](https://docs.microsoft.com/en-us/windows/terminal/cascadia-code)
 
@@ -39,6 +39,7 @@ ln -s ~/.dotfiles/bash/.bashrc ~/.bashrc
 ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/zsh/.p10k.zsh ~/.p10k.zsh
 ln -s ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
+ln -s ~/.dotfiles/vim/.vimrc ~/.vimrc
 ```
 
 4. Change your default shell
