@@ -71,7 +71,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Start tmux by default
-ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOSTART=false
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -85,14 +85,19 @@ plugins=(
     cp
     docker
     docker-compose
+    encode64
     extract
     fd
+    fzf
     git
     history
+    kubectl
     npm
+    minikube
     pyenv
     tmux
     zsh-autosuggestions
+    zsh-interactive-cd
     zsh-syntax-highlighting
     )
 

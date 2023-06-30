@@ -116,7 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-GOPATH=$HOME/go
 function _update_ps1() {
     PS1="$($GOPATH/bin/powerline-go -error $?)"
 }
